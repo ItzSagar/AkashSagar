@@ -1,0 +1,25 @@
+graph LR
+A[Start] --> B{Identify Target Companies}
+B --> C{Organic Data}
+B --> D{ABM (Account-Based Marketing)}
+C --> E{Filter Data}
+D --> E
+E --> F{Geographic Filters}
+E --> G{Revenue Filters}
+F --> H{Refined Target List}
+G --> H
+H --> I{Campaign Execution}
+I --> J{Handoff to LinkedIn Team}
+J --> K{Campaign Performance Data}
+K --> L{Filter Data (Again)}
+L --> F
+L --> G
+F --> M{Final Target List}
+G --> M
+M --> N{Client Check}
+N --> O{Existing Clients (Yes)} [Yes]
+O --> P{Identify CP & BRM}
+O --> Q{Share List with Sales Team} [Yes]
+N --> R{New Leads (No)} [No]
+R --> S{Share List with MMT} [Yes]
+S --> T(End)
